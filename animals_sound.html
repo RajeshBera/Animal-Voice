@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animals sound</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(to top,pink,white,skyblue);
+        text-align: center;
+    }
+img{
+    transition: 0.5s;
+    margin: 0px 5px ;
+}
+    img:hover {
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(226, 33, 95),
+        0 0 10px grey,
+        0 20px 10px red;
+        transform: scale(0.9);
+        border-radius: 10%;
+    }
+</style>
+
+<body>
+    <audio id="myAudio1" src="cow.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio2" src="Lion.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio3" src="Tiger.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio4" src="elephant.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio5" src="cat.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio6" src="Dog.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio7" src="Goat.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio8" src="zebra.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio9" src="Giraffe.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio10" src="donkey.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio11" src="panda.mp3" type="audio/mp3"></audio>
+    <audio id="myAudio12" src="Horse.mp3" type="audio/mp3"></audio>
+    <div>
+        <img src="cow.png" onclick="sound(1)" height="205" width="250">
+        <img src="lion.png" onclick="sound(2)" height="205" width="250">
+        <img src="tiger.png" onclick="sound(3)" height="205" width="250">
+        <img src="elephant.png" onclick="sound(4)" height="205" width="250">
+    </div>
+    <div>
+        <img src="cat.png" onclick="sound(5)" height="205" width="250">
+        <img src="dog.png" onclick="sound(6)" height="205" width="250">
+        <img src="goat.png" onclick="sound(7)" height="205" width="250">
+        <img src="zebra.png" onclick="sound(8)" height="205" width="250">
+    </div>
+    <div>
+        <img src="giraffe.png" onclick="sound(9)" height="205" width="250">
+        <img src="ass.png" onclick="sound(10)" height="205" width="250">
+        <img src="panda.png" onclick="sound(11)" height="205" width="250">
+        <img src="horse.png" onclick="sound(12)" height="205" width="250">
+    </div>
+</body>
+<script>
+
+    function sound(v) {
+        if (v == 1) {
+            x = document.getElementById("myAudio1");
+            x.play();
+        }
+        else if (v == 2) {
+            x = document.getElementById("myAudio2");
+            x.play();
+        } else if (v == 3) {
+            x = document.getElementById("myAudio3");
+            x.play();
+        } else if (v == 4) {
+            x = document.getElementById("myAudio4");
+            x.play();
+        } else if (v == 5) {
+            x = document.getElementById("myAudio5");
+            x.play();
+        } else if (v == 6) {
+            x = document.getElementById("myAudio6");
+            x.play();
+        } else if (v == 7) {
+            x = document.getElementById("myAudio7");
+            x.play();
+        } else if (v == 8) {
+            x = document.getElementById("myAudio8");
+            x.play();
+        } else if (v == 9) {
+            x = document.getElementById("myAudio9");
+            x.play();
+        } else if (v == 10) {
+            x = document.getElementById("myAudio10");
+            x.play();
+        } else if (v == 11) {
+            x = document.getElementById("myAudio11");
+            x.play();
+        } else if (v == 12) {
+            x = document.getElementById("myAudio12");
+            x.play();
+        } 
+    }
+
+
+</script>
+
+</html>
